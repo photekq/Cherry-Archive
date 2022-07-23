@@ -1,0 +1,35 @@
+.theme-classic {
+    --color-background: #f5c67f;
+    --color-text: #1a1a1a;
+    --color-accent: #db0308;
+    --color-table-light: #fff6da;
+    --color-table-dark: #feecbe;
+    --color-table-borders: #1914113a;
+    --color-selected: #db0308;
+    --color-selected-text: #1a1a1a;
+    --sprite: url('../../cherry-combined.png') 0 -40px;
+  }
+  
+  .theme-dark {
+    --color-background: #202225;
+    --color-text: #e9e9e9;
+    --color-accent: #e9e9e9;
+    --color-table-light: #37393f;
+    --color-table-dark: #292b2f;
+    --color-table-borders: #e9e9e93f;
+    --color-selected: #db0308;
+    --color-selected-text: #1a1a1a;
+    --sprite: url('../../cherry-combined.png') 0 0;
+  }
+  
+  .theme-light {
+    --color-background: #e3e5e8;
+    --color-text: #000000;
+    --color-accent: #000000;
+    --color-table-light: #f2f3f5;
+    --color-table-dark: #c6cad0;
+    --color-table-borders: #1914113a; 
+    --color-selected: #db0308;
+    --color-selected-text: #e3e5e8;
+    --sprite: url('../../cherry-combined.png') 0 -40px;
+  }

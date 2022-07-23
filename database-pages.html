@@ -1,0 +1,622 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Starter Template · Bootstrap v4.6</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/starter-template/">
+
+
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap-4.6.0-dist/css/custom.css">
+<!--<link rel="stylesheet" href="bootstrap-4.6.0-dist/css/navbar-fixed-right.css">-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.6/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.6/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.6/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.6/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.6/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.6/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.6/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+<nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img src="cherry.png" alt="" width="120" height="40"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link active" aria-current="page" href="database.html">Database</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="submit.html">Submit</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="knowledge.html">Knowledge Base</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-10 nopadding">
+    <table class="table table-responsive-1920 table-striped table-bordered table-sm text-nowrap">
+      <thead>
+        <tr class="sticky text-center">
+          <th colspan="3">Article Number</th>
+          <th colspan="4">Keyboard Specifications</th>
+          <th colspan="4">Layout</th>
+          <th colspan="5">Keycaps</th>
+        </tr>
+        <tr class="stickynest">
+          <th>
+            <select class="selectpicker" multiple id="Series" title="Series" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+              <option>G80</option>
+              <option>G81</option>
+              <option>ESA</option>
+            </select>
+          </th>
+          <th>
+            <select class="selectpicker" multiple id="Model" title="Model" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+              <option>01000</option>
+              <option>1000</option>
+              <option>1191</option>
+            </select>
+          </th>
+          <th>
+            <select class="selectpicker" multiple id="Article" title="Article" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+              <option>HAI</option>
+              <option>HAD</option>
+              <option>HDU</option>
+            </select>
+          </th>
+          <th>
+            <select class="selectpicker" multiple id="kbSwitch" title="Switch" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+              <option>Black</option>
+              <option>Clear</option>
+              <option>MY</option>
+            </select>
+          </th>
+          <th>
+            <select class="selectpicker" multiple id="kbInterface" title="Interface" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+              <option>DIN</option>
+              <option>PS2</option>
+              <option>Serial</option>
+            </select>
+          </th>
+          <th>
+            <select class="selectpicker" multiple id="kbBrand" title="Brand" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+              <option>Rohde & Schwarz</option>
+              <option>Nixdorf Computer</option>
+              <option>Siemens Nixdorf</option>
+            </select>
+          </th>
+          <th>
+            <select class="selectpicker" multiple id="caseStyle" title="Case Style" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+              <option>3000</option>
+              <option>Prism</option>
+              <option>Integrated</option>
+            </select>
+          </th>
+          <th>
+            <select class="selectpicker" multiple id="languagePrimary" title="Language" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+              <option>English US</option>
+              <option>Yugoslavian</option>
+              <option>German</option>
+            </select>
+          </th>
+          <th>
+            <select class="selectpicker" multiple id="layoutSub" title="Sub Language" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+              <option>Russian/Ukrainian</option>
+              <option>Arabic</option>
+              <option>English US</option>
+            </select>
+          </th>
+          <th>
+            <select class="selectpicker" multiple id="layoutSize" title="Size" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+              <option>Standard</option>
+              <option>Compact</option>
+              <option>Extended</option>
+            </select>
+          </th>
+          <th>
+            <select class="selectpicker" multiple id="layoutType" title="Type" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+              <option>ANSI</option>
+              <option>ISO</option>
+              <option>JIS</option>
+            </select>
+          </th>
+          <th>
+            <select class="selectpicker" multiple id="keycapMaterial" title="Material" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+              <option>ABS</option>
+              <option>PBT</option>
+              <option>POM</option>
+            </select>
+          </th>
+          <th>
+            <select class="selectpicker" multiple id="keycapThickness" title="Thickness" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+              <option>Thick</option>
+              <option>Thin</option>
+            </select>
+          </th>
+          <th>
+            <select class="selectpicker" multiple id="keycapPrimary" title="Legend Print" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+              <option>Doubleshot</option>
+              <option>Dyesub</option>
+              <option>Lasered</option>
+            </select>
+          </th>
+          <th>
+            <select class="selectpicker" multiple id="keycapSub" title="Sub Legend Print" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+              <option>Doubleshot</option>
+              <option>Dyesub</option>
+              <option>Pad Print</option>
+            </select>
+          </th>
+          <th>
+            <select class="selectpicker" multiple id="keycapScheme" title="Colour Scheme" data-width="100%" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+              <option>Beige two-tone</option>
+              <option>Other two-tone</option>
+              <option>Black on white</option>
+            </select>
+          </th>
+          </th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+      </tbody>
+    </table>
+  </div>
+    <div class="sidenav col-2 nopadding text-center">
+      <p style="padding-top: 5.8px;">Additional Filters</p>
+      <p>Keyboard Specifications</p>
+        <select class="selectpicker additional" multiple id="kbKRO" title="Key Rollover" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+          <option>Beige two-tone</option>
+          <option>Other two-tone</option>
+          <option>Black on white</option>
+        </select>
+        <select class="selectpicker additional" multiple id="kbFeature" title="Keyboard Feature" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+          <option>Beige two-tone</option>
+          <option>Other two-tone</option>
+          <option>Black on white</option>
+        </select>
+        <select class="selectpicker additional" multiple id="kbFeature2" title="Keyboard Feature2" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+          <option>Beige two-tone</option>
+          <option>Other two-tone</option>
+          <option>Black on white</option>
+        </select>
+        <select class="selectpicker additional" multiple id="switchPlate" title="Switchplate" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+          <option>Beige two-tone</option>
+          <option>Other two-tone</option>
+          <option>Black on white</option>
+        </select>
+        <select class="selectpicker additional" multiple id="switchSuper" title="MX Superblack" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+          <option>Beige two-tone</option>
+          <option>Other two-tone</option>
+          <option>Black on white</option>
+        </select>
+        <select class="selectpicker additional" multiple id="switchLock" title="MX Lock" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+          <option>Beige two-tone</option>
+          <option>Other two-tone</option>
+          <option>Black on white</option>
+        </select>
+        <select class="selectpicker additional" multiple id="caseColour" title="Case Colour" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+          <option>Beige two-tone</option>
+          <option>Other two-tone</option>
+          <option>Black on white</option>
+        </select>
+      <p>Keycaps</p>
+        <select class="selectpicker additional" multiple id="keycapNonstandard" title="Non-Standard Keycaps" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+          <option>Beige two-tone</option>
+          <option>Other two-tone</option>
+          <option>Black on white</option>
+        </select>
+        <select class="selectpicker additional" multiple id="keycapSide" title="Side Legend Print" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+          <option>Beige two-tone</option>
+          <option>Other two-tone</option>
+          <option>Black on white</option>
+        </select>
+        <select class="selectpicker additional" multiple id="keycapSecColour" title="Secondary Legend Colour" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+          <option>Beige two-tone</option>
+          <option>Other two-tone</option>
+          <option>Black on white</option>
+        </select>
+        <select class="selectpicker additional" multiple id="keycapColour" title="Coloured Keycaps" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+          <option>Beige two-tone</option>
+          <option>Other two-tone</option>
+          <option>Black on white</option>
+        </select>
+        <select class="selectpicker additional" multiple id="keycapWindow" title="LED Windows" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+          <option>Beige two-tone</option>
+          <option>Other two-tone</option>
+          <option>Black on white</option>
+        </select>
+        <select class="selectpicker additional" multiple id="keycapCaps" title="Caps Lock Type" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+          <option>Beige two-tone</option>
+          <option>Other two-tone</option>
+          <option>Black on white</option>
+        </select>
+        <select class="selectpicker additional" multiple id="keycapMX" title="MX Compatibility" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+          <option>Beige two-tone</option>
+          <option>Other two-tone</option>
+          <option>Black on white</option>
+        </select>
+        <select class="selectpicker additional" multiple id="keycapSpace" title="Spacebar Size" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+          <option>Beige two-tone</option>
+          <option>Other two-tone</option>
+          <option>Black on white</option>
+        </select>
+        <select class="selectpicker additional" multiple id="layoutWin" title="Windows Keys" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+          <option>Beige two-tone</option>
+          <option>Other two-tone</option>
+          <option>Black on white</option>
+        </select>
+    </div>
+</div>
+</div>
+<div class="container">
+  <div id="pagination-wrapper"></div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+<script>
+
+/*if ((data[i].Series).includes(value[x]))*/
+        var masterTable = []
+        $(document).ready(function(){
+        $.ajax({
+          method: 'GET',
+          url:'http://localhost:8080/database.json',
+          success:function(response){
+            masterTable = response
+            state.querySet = masterTable
+            console.log(filtersActive)
+/*            var balls = filters.every(function(filter){
+              for (var x = 0; x < filtersActive[filter].length; x++){
+                if (masterTable[0][filter].includes(filtersActive[filter][x])){
+                  return filter
+                  }
+              }
+            })
+            console.log(balls)*/
+            buildTable()
+          }
+        })
+        })
+
+var state = {
+  'querySet':masterTable,
+  'page':1,
+  'rows':30,
+  'window':5,
+}
+
+var filters = [
+  "Series",
+  "Model",
+  "Article",
+  "kbSwitch",
+  "kbInterface",
+  "kbBrand",
+  "caseStyle",
+  "languagePrimary",
+  "layoutSub",
+  "layoutSize",
+  "layoutType",
+  "keycapMaterial",
+  "keycapThickness",
+  "keycapPrimary",
+  "keycapSub",
+  "keycapScheme",
+  "kbKRO",
+  "kbFeature",
+  "kbFeature2",
+  "switchPlate",
+  "switchSuper",
+  "switchLock",
+  "caseColour",
+  "keycapNonstandard",
+  "keycapSide",
+  "keycapSecColour",
+  "keycapColour",
+  "keycapWindow",
+  "keycapCaps",
+  "keycapMX",
+  "keycapSpace",
+  "layoutWin"
+]
+
+var filtersMain = {
+  "Series": ["Series"],
+  "Model": ["Model"],
+  "Article": ["Article"],
+  "kbSwitch": ["Switch"],
+  "kbInterface": ["Interface"],
+  "kbBrand": ["Brand"],
+  "caseStyle": ["Case Style"],
+  "languagePrimary": ["Language"],
+  "layoutSub": ["Sub Language"],
+  "layoutSize": ["Size"],
+  "layoutType": ["Type"],
+  "keycapMaterial": ["Material"],
+  "keycapThickness": ["Thickness"],
+  "keycapPrimary": ["Legend Print"],
+  "keycapSub": ["Sub Legend Print"],
+  "keycapScheme": ["Colour Scheme"]
+}
+
+var filtersSide = {
+  "kbKRO": ["Key Rollover"],
+  "kbFeature": ["Keyboard Feature"],
+  "kbFeature2": ["Keyboard Feature2"],
+  "switchPlate": ["Switchplate"],
+  "switchSuper": ["MX Superblack"],
+  "switchLock": ["MX Lock"],
+  "caseColour": ["Case Colour"],
+  "keycapNonstandard": ["Non-Stndard Keycaps"],
+  "keycapSide": ["Side Legend Print"],
+  "keycapSecColour": ["Secondary Legend Colour"],
+  "keycapColour": ["Coloured Keycaps"],
+  "keycapWindow": ["LED Windows"],
+  "keycapCaps": ["Caps Lock Type"],
+  "keycapMX": ["MX Compatibility"],
+  "keycapSpace": ["Spacebar Size"],
+  "layoutWin": ["Windows Keys"]
+}
+
+var filtersActive = {
+  "Series": [""],
+  "Model": [""],
+  "Article": [""],
+  "kbSwitch": [""],
+  "kbInterface": [""],
+  "kbBrand": [""],
+  "caseStyle": [""],
+  "languagePrimary": [""],
+  "layoutSub": [""],
+  "layoutSize": [""],
+  "layoutType": [""],
+  "keycapMaterial": [""],
+  "keycapThickness": [""],
+  "keycapPrimary": [""],
+  "keycapSub": [""],
+  "keycapScheme": [""],
+  "kbKRO": [""],
+  "kbFeature": [""],
+  "kbFeature2": [""],
+  "switchPlate": [""],
+  "switchSuper": [""],
+  "switchLock": [""],
+  "caseColour": [""],
+  "keycapNonstandard": [""],
+  "keycapSide": [""],
+  "keycapSecColour": [""],
+  "keycapColour": [""],
+  "keycapWindow": [""],
+  "keycapCaps": [""],
+  "keycapMX": [""],
+  "keycapSpace": [""],
+  "layoutWin": [""]
+}
+
+
+
+function pagination(querySet, page, rows){
+  var trimStart = (page - 1) * rows
+  var trimEnd = trimStart + rows
+
+  var trimmedData = querySet.slice(trimStart, trimEnd)
+
+  var pages = Math.ceil(querySet.length/rows)
+
+  return{
+    'querySet':trimmedData,
+    'pages':pages
+  }
+}
+
+function buildTable(){
+  var table = $('#table-body')
+
+  var data = pagination(state.querySet, state.page, state.rows)
+  console.log('Data:', data)
+
+  myList = data.querySet
+
+  for (var i = 1 in myList){
+    var row = `<tr>
+                <td>${myList[i].Series}</td>
+                <td>${myList[i].Model}</td>
+                <td>${myList[i].Article}</td>
+                <td>${myList[i].kbSwitch}</td>
+                <td>${myList[i].kbInterface}</td>
+                <td>${myList[i].kbBrand}</td>
+                <td>${myList[i].caseStyle}</td>
+                <td>${myList[i].languagePrimary}</td>
+                <td>${myList[i].layoutSub}</td>
+                <td>${myList[i].layoutSize}</td>
+                <td>${myList[i].layoutType}</td>
+                <td>${myList[i].keycapMaterial}</td>
+                <td>${myList[i].keycapThickness}</td>
+                <td>${myList[i].keycapPrimary}</td>
+                <td>${myList[i].keycapSub}</td>
+                <td>${myList[i].keycapScheme}</td>
+                `
+      table.append(row)
+
+  }
+  pageButtons(data.pages)
+}
+
+function pageButtons(pages){
+  var wrapper = document.getElementById('pagination-wrapper')
+  wrapper.innerHTML = ''
+
+  var maxLeft = (state.page - Math.floor(state.window/2))
+  var maxRight = (state.page + Math.floor(state.window/2))
+
+  if (maxLeft < 1){
+    maxLeft = 1
+    maxRight = state.window
+  }
+
+  if (maxRight > pages){
+    maxLeft = pages - (state.window - 1)
+    maxRight = pages
+
+    if (maxLeft < 1){
+      maxLeft = 1
+    }
+  }
+
+//  for (var page = maxLeft; page <= maxRight; page ++){
+//    wrapper.innerHTML += `<button value=${page} class="page btn btn-sm btn-info">${page}</button>`
+//  }
+
+  for (var page = maxLeft; page < state.page; page ++){
+    wrapper.innerHTML += `<button value=${page} class="page btn btn-sm btn-info">${page}</button>`
+  }
+
+  wrapper.innerHTML += `<button value=${state.page} class="page btn btn-sm btn-primary">${state.page}</button>`
+
+  for (var page = (state.page + 1); page <= maxRight; page ++){
+    wrapper.innerHTML += `<button value=${page} class="page btn btn-sm btn-info">${page}</button>`
+  }
+
+  if (state.page != 1){
+    wrapper.innerHTML = `<button value=${1} class="page btn btn-sm btn-info">&#171; First</button>` + wrapper.innerHTML
+  }
+
+  if (state.page != pages){
+    wrapper.innerHTML += `<button value=${pages} class="page btn btn-sm btn-info">Last &#187;</button>`
+  }
+
+  $('.page').on('click', function(){
+    $('#table-body').empty()
+
+    state.page = Number($(this).val())
+
+    buildTable()
+  })
+}
+
+
+/*$('#Series').on('change', function(){
+  state.page = 1
+  var value = $(this).val()
+  if (value.length > 0){
+  console.log(value)
+  searchTable(value, masterTable)} else{
+    value[0] = ""
+    searchTable(value, masterTable)
+  }
+})*/
+
+function searchTable(data){
+  var filteredData = []
+  //
+  for (var i = 0; i < data.length; i++){
+    var balls = filters.every(function(filter){
+      if (filtersActive[filter][0] == ""){
+        return filter
+      } else{
+          if (filtersActive[filter].includes(data[i][filter])){
+            return filter
+          }
+      }
+
+
+    })
+    console.log(balls)
+    if (balls){
+      filteredData.push(data[i])
+    }
+    }
+
+  //
+
+
+  /*for (var x = 0; x < value.length; x++){
+    for (var i = 0; i < data.length; i++){
+      if ((data[i].Series).includes(value[x])){
+        filteredData.push(data[i])
+      }
+
+    }
+  }*/
+
+  state.querySet = filteredData
+  var table = document.getElementById('table-body')
+  table.innerHTML = ''
+  buildTable()
+}
+
+$('.selectpicker').on('change', function(){
+  state.page = 1
+  var value = $(this).val()
+  var filter = $(this).attr('id')
+  console.log(value.length)
+  if (value.length > 0){
+  filtersActive[filter] = value
+  console.log(filtersActive)
+  searchTable(masterTable)} else{
+    filtersActive[filter] = [""]
+    console.log(filtersActive)
+    searchTable(masterTable)
+  }
+})
+
+</script>
+
+  </body>
+</html>
