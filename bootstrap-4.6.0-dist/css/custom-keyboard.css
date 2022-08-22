@@ -1,0 +1,354 @@
+* {
+    outline: 1px solid red;
+}
+
+.showon5 {
+    display: none;
+}
+
+
+.table-sm>tbody>tr>td, .table-sm>tbody>tr>th, .table-sm>tfoot>tr>td, .table-sm>tfoot>tr>th, .table-sm>thead>tr>td, .table-sm>thead>tr>th {
+    padding: 0.2rem;
+    padding-top: calc(0.2rem + 1px);
+    padding-left: calc(0.2rem + 3px);
+}
+
+.bg-dark {
+    background-color: var(--color-background)!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--color-text);
+}
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--color-text);
+}
+
+.navbar {
+  border-bottom: 10px solid var(--color-accent);
+  margin-bottom: 1.5px;
+}
+
+
+.table {
+  font-size: 1.2rem;
+  margin-bottom: 0rem;
+  color: var(--color-text);
+}
+
+.table td {
+  font-family: 'souvenir_lt_btlight', sans-serif;
+  font-weight: 500;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--color-table-dark);
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: var(--color-table-light);
+}
+
+.table td, .table th {
+  border-top: 0px;
+}
+
+h1 {
+  font-family: 'itc_souvenirdemi', sans-serif;
+  font-size: 3rem;
+  line-height: 60px;
+  height: 60px;
+  padding-left: 0px;
+}
+
+body {
+  display: block;
+  margin: 0 auto;
+  font-family: 'itc_souvenirdemi', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.full-img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-table-dark);
+  background-clip: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.displayed-img, .displayed-img-mobile {
+  margin: 0 auto;
+  padding: 50px;
+  padding-top: 61px;
+  padding-bottom: 115px;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.thumb-bar {
+  padding-right: 62px;
+  padding-left: 0px;
+  display: flex;
+  float: right;
+  position: relative;
+  top: -83px;
+}
+
+button {
+  border: 0;
+  background: rgba(150,150,150,0.6);
+  text-shadow: 1px 1px 1px white;
+  border: 1px solid #999;
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px;
+}
+
+.col-xl-4 {
+    padding: 0px;
+    background-color: var(--color-table-dark);
+}
+
+.col-xl-8 {
+  padding-left: 0px;
+  padding-right: 60px;
+  padding-top: 0px;
+  height:977px;
+}
+
+.extra {
+  padding: 0px;
+  height: 0px;
+}
+
+.thumb-bar img {
+  padding: 0px;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  object-fit: contain;
+  background-color: transparent;
+  background-clip: content-box;
+  padding: 3px;
+  border: 1px solid var(--color-accent);
+  border-radius: 3px;
+  margin: 3px;
+}
+
+.kbname {
+  padding-top: 30px;
+  height: 90px;
+}
+
+.site-logo {
+  width: 120px;
+  height: 40px;
+  background: var(--sprite);
+}
+
+.credit {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: smaller;
+  font-family: 'itc_souvenirmedium_italic';
+  padding: 8px;
+  border-bottom: 1px solid var(--color-accent);
+  border-left: 1px solid var(--color-accent);
+  border-radius: 3px;
+}
+
+.row {
+    padding-left: 60px;
+}
+.end {
+    height: 0px;
+}
+
+@media screen and (max-width: 2000px), screen and (max-height: 1225px) {
+    .table {
+        font-size: 1rem;
+    }
+    .col-xl-4, .col-xl-8 {
+        height: 847px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .thumb-bar {
+        top: -70px;
+    }
+    .thumb-bar img {
+        height: 62px;
+        width: 62px;
+    }
+  }
+
+@media screen and (max-width: 1930px), screen and (max-height: 1090px) {
+    .table {
+        font-size: 0.9rem;
+    }
+    .col-xl-4, .col-xl-8 {
+        height: 783px;
+    }
+    h1 {
+        font-size: 2.25rem;
+    }
+    .thumb-bar {
+        top: -64.25px;
+    }
+    .thumb-bar img {
+        height: 56.25px;
+        width: 56.25px;
+    }
+}
+
+@media screen and (max-width: 1800px), screen and (max-height: 1025px) {
+    .table {
+        font-size: 0.8rem;
+    }
+    .col-xl-4, .col-xl-8 {
+        height: 717px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .thumb-bar {
+        top: -58px;
+    }
+    .thumb-bar img {
+        height: 50px;
+        width: 50px;
+    }
+    .nav-link {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 1600px), screen and (max-height: 960px) {
+    .table {
+        font-size: 0.6rem;
+    }
+    .col-xl-4, .col-xl-8 {
+        height: 588px;
+    }
+    h1 {
+        font-size: 1.75rem;
+    }
+    .thumb-bar {
+        top: -45.5px;
+    }
+    .thumb-bar img {
+        height: 37.5px;
+        width: 37.5px;
+    }
+    .extra {
+        padding-top: 0px;
+        height: 50px;
+    }
+}
+
+
+/*@media screen and (max-width: 1600px), screen and (max-height: 800px) {
+    .table {
+        font-size: 0.5rem;
+    }
+    .col-xl-4, .col-xl-8 {
+        height: 523px;
+        position: relative;
+        top: -10px;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+    .extra {
+        height: 40px;
+        padding-top: 0px;
+    }
+    #keyboardName {
+        position: relative;
+        top: -10px;
+    }
+
+}*/
+
+@media screen and (max-width: 1199px) {
+    .row {
+        padding-left: 20px;
+    }
+
+    .col-xl-4, .col-xl-8 {
+        height: 100%;
+        padding-right: 20px;
+    }
+    .table {
+        font-size: 0.75rem;
+    }
+    body {
+        position: relative;
+    }
+    html, body {
+        max-width: 100%;
+        
+    }
+    .hideon5 {
+        display: none;
+        
+    }
+    .showon5 {
+        display: block;
+    }
+    .col-xl-4 {
+        background-color: transparent;
+    }
+    .displayed-img-mobile {
+        padding: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .thumb-bar img {
+        height: 40px;
+        width: 40px;
+    }
+    .thumb-bar {
+        top: -735px;
+        right: 0px;
+        padding-right: 37px;
+    }
+    #madein {
+        height:70px;
+        bottom: 0px;
+        right: 5px;
+    }
+    .bottom-line {
+        bottom: -10px;
+    }
+    .navbar-toggler {
+        position: absolute;
+        top: 15px;
+        right: 75px;
+    }
+    .btn-container {
+        right: 30px;
+      }
+    .navbar {
+        position: relative!important;
+    }
+    .navbar-nav {
+        margin-right: 0px!important;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .thumb-bar img {
+        height: 15px;
+        width: 15px;
+    }
+}

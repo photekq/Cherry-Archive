@@ -1,0 +1,110 @@
+/* changes hyperlink text colour */
+a {
+    color: var(--color-link)
+  }
+
+
+/* moves ko-fi button */
+.btn-container {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    z-index: 666777;
+  }
+
+
+/* navbar colour */
+.bg-dark {
+    background-color: var(--color-background)!important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--color-text);
+}
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--color-link);
+}
+
+
+/* thick line below navbar */
+.navbar {
+    border-bottom: 10px solid var(--color-accent);
+    margin-bottom: 1.5px;
+  }
+
+
+/* alternating table row colours */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--color-table-dark);
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: var(--color-table-light);
+}
+
+
+/* table borders/padding */
+.table td, .table th {
+    padding-right: 1px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 1px;
+    border-right-color: var(--color-table-borders);
+}
+.table-bordered thead td, .table-bordered thead th {
+    border-bottom-width: 0px;
+}
+
+/* background colour, body font, text colour */
+body {
+    display: block;
+    margin: 0 auto;
+    font-family: 'itc_souvenirdemi', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+/* logo sprite */
+.site-logo {
+    width: 120px;
+    height: 40px;
+    background: var(--sprite);
+}
+
+/* decor */
+.top-line {
+    height: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--color-accent);
+    position: absolute;
+    bottom: -15px;
+    left: 0px;
+}
+.bottom-line {
+    height: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--color-accent);
+    position: absolute;
+    bottom: 58px;
+}
+#madein {
+    font-family: 'itc_souvenirmedium_italic';
+    text-align: center;
+    font-size: smaller;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    z-index: 777888;
+  }
+
+#nomargin {
+    margin: 0px;
+}
+
+.navbar-toggler {
+    position: relative;
+    right: 175px;
+}
+

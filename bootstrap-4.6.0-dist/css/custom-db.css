@@ -1,0 +1,205 @@
+
+/* table font size and colour */
+table {
+    font-size: 0.8rem;
+    color: var(--color-text)!important;
+    margin-top: 2px;
+  }
+
+
+/* removes padding for col-10 */
+.nopadding {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin: 0 !important;
+}
+/* moves sidenav down */
+.sidenav {
+    padding-top: 34px;
+}
+
+
+
+/* sets footer position for pagination wrapper */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+
+/* table borders and padding */
+.table-bordered {
+    border: 0px;
+}
+thead tr.stickynest th {
+    padding: 0px;
+}
+
+
+/* ---dropdowns--- */
+.dropdown {
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: var(--color-text);
+}
+/* changes text colour of unclicked dropdown */
+.bootstrap-select>.dropdown-toggle.bs-placeholder {
+    color: var(--color-text)!important;
+}
+/* changes text colour on hover */
+.bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+    color: var(--color-text)!important;
+  }
+/* changes dropdown bg colour */
+.btn-light {
+    background-color: var(--color-table-light)!important;
+    border: 0px!important;
+}
+/* on hover */
+.btn-light:hover {
+    background-color: var(--color-table-dark)!important;
+}
+/* on mousedown */
+.btn-light:active {
+    background-color: var(--color-table-dark)!important;
+    outline-color: var(--color-table-dark)!important;
+}
+/* opened */
+.show>.btn-light.dropdown-toggle {
+    background-color: var(--color-table-dark)!important;
+    border-color: var(--color-table-dark)!important;
+}
+/* menu colour */
+.dropdown-menu {
+    background-color: var(--color-table-light)!important;
+}
+/* item on hover */
+.dropdown-item:hover {
+    background-color: var(--color-table-dark)!important;
+}
+/* menu text colour, needed for switching themes */
+.dropdown-item {
+    color: var(--color-text)!important;
+}
+/* highlights item on selection */
+.dropdown-menu .selected {
+    background-color: var(--color-table-dark)!important;
+    color: var(--color-text)!important;
+}
+/* select all deselect all buttons */
+.actions-btn {
+    border: 1px solid var(--color-table-borders)!important;
+    color: var(--color-text);
+    background-color: var(--color-table-dark)!important;
+} 
+.actions-btn:hover {
+    background-color: var(--color-accent)!important;
+    color: var(--color-background);
+}
+/* theme buttons */
+.btn-outline-danger {
+    background-color: var(--color-table-light);
+    border-color: var(--color-text);
+    color: var(--color-text);
+}
+.btn-outline-danger:hover {
+    background-color: var(--color-table-dark);
+    border-color: var(--color-text);
+    color: var(--color-text);
+}
+/* sidenav border removal */
+.sidenav .dropdown {
+    border-bottom: 0px;
+    margin: 1px;
+}
+
+
+
+
+/* pagination buttons */
+.btn-secondary {
+    background-color: var(--color-table-dark);
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: var(--color-text);
+    margin: 2px;
+}
+.btn-secondary:hover {
+    background-color: var(--color-accent);
+    color: var(--color-background)
+}
+.btn-danger {
+    background-color: var(--color-accent);
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: var(--color-table-light);
+    border-color: var(--color-text);
+    margin: 2px;
+}
+#pagination-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* table font */
+.table td {
+    font-family: 'souvenir_lt_btlight', sans-serif;
+    font-weight: 500;
+}
+.btn{
+    font-family: 'souvenir_lt_btlight', sans-serif;
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+  
+  .dropdown-item{
+    font-family: 'souvenir_lt_btlight', sans-serif;
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+
+
+/* responsive */
+@media screen and (max-width: 1900px){
+    .hideon1 {
+        display: none;
+    }
+}
+@media screen and (max-width: 1595px){
+    .hideon2 {
+        display:none;
+    }
+}
+@media screen and (max-width: 975px){
+    .hideon3 {
+        display:none;
+    }
+}
+@media screen and (max-width: 960px){
+    .nav-link {
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width: 675px){
+    .footer {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .hideon4 {
+        display: none;
+    }
+    .btn {
+        margin: 0px;
+    }
+}

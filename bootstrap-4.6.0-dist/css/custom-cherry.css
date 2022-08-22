@@ -1,14 +1,19 @@
+.btn-container {
+  position: fixed;
+  top: 13px;
+  right: 10px;
+  z-index: 666777;
+}
 
+.glow {
+    box-shadow: 0 0 10px var(--color-accent);
+  }
 
 a {
-  color: #863730
+  color: var(--color-link)
 }
 
 thead tr.stickynest th {
-  /*position: sticky;
-  top: 99.6px;
-  background: #eee;
-  height: 47.6px;*/
   padding: 0px;
 }
 
@@ -19,9 +24,9 @@ thead tr.stickynest th {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   right: 0;
-  background-color: rgba(0,0,0,0);
+  background-color: var(--color-background);
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 78.5px;
+  margin-top: 79.5px;
 }
 
 .sidenav p {
@@ -45,7 +50,7 @@ table {
   color: var(--color-text)!important;
 }
 
-.btn{
+.btn {
   font-family: 'souvenir_lt_btlight', sans-serif;
   font-weight: 200;
   font-size: 0.8rem;
@@ -63,9 +68,8 @@ th.spacer {
 }
 
 .footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  float: left;
   width: 100%;
   text-align: center;
 }
@@ -95,8 +99,7 @@ th.spacer {
     color: var(--color-text);
 }
 .navbar-dark .navbar-nav .nav-link.active {
-    color: var(--color-text);
-    text-decoration: underline;
+    color: var(--color-link);
 }
 
 .navbar {
@@ -105,12 +108,19 @@ th.spacer {
 }
 
 .container-fluid {
-  border-top: 1px solid var(--color-accent);
+  border-top: 2px solid var(--color-accent);
+  z-index: 666777;
+}
+
+.sidenav {
+    border-top: 2px solid var(--color-accent);
+    z-index: 666777;
 }
 
 .footer {
-  border-top: 1px solid var(--color-accent);
-  padding-top: 24px;
+  z-index: 666778;
+  border-top: 2px solid var(--color-accent);
+  padding-top: 8px;
   padding-bottom: 8px;
 }
 
@@ -291,4 +301,18 @@ body {
   width: 120px;
   height: 40px;
   background: var(--sprite);
+}
+
+#madein {
+  font-family: 'itc_souvenirmedium_italic';
+  text-align: center;
+  font-size: smaller;
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  z-index: 777888;
+}
+
+#nomargin {
+  margin: 0px;
 }
