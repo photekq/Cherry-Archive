@@ -174,7 +174,7 @@ thead tr.stickynest th {
         display: none;
     }
 }
-@media screen and (max-width: 1595px){
+@media (max-width: 1595px) or (max-height: 895px){
     .hideon2 {
         display:none;
     }
@@ -187,6 +187,11 @@ thead tr.stickynest th {
 @media screen and (max-width: 960px){
     .nav-link {
         font-size: 0.6rem;
+    }
+}
+@media screen and (max-width: 800px){
+    .nav-link {
+        padding: 4px!important;
     }
 }
 @media screen and (max-width: 675px){

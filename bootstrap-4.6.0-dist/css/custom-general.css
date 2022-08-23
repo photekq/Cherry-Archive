@@ -105,6 +105,8 @@ body {
 
 .navbar-toggler {
     position: relative;
-    right: 175px;
+    right: 180px;
+    color: var(--color-text)!important;
+    border-color: var(--color-text)!important;
 }
 

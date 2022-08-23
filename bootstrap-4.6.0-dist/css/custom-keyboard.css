@@ -1,6 +1,6 @@
-* {
+/** {
     outline: 1px solid red;
-}
+}*/
 
 .showon5 {
     display: none;
@@ -56,8 +56,6 @@
 h1 {
   font-family: 'itc_souvenirdemi', sans-serif;
   font-size: 3rem;
-  line-height: 60px;
-  height: 60px;
   padding-left: 0px;
 }
 
@@ -99,16 +97,7 @@ body {
   top: -83px;
 }
 
-button {
-  border: 0;
-  background: rgba(150,150,150,0.6);
-  text-shadow: 1px 1px 1px white;
-  border: 1px solid #999;
-  position: absolute;
-  cursor: pointer;
-  top: 2px;
-  left: 2px;
-}
+
 
 .col-xl-4 {
     padding: 0px;
@@ -142,8 +131,8 @@ button {
 }
 
 .kbname {
-  padding-top: 30px;
-  height: 90px;
+  padding-top: 90px;
+  height: 60px;
 }
 
 .site-logo {
@@ -170,6 +159,13 @@ button {
 .end {
     height: 0px;
 }
+#keyboardName {
+    line-height: auto!important;
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0px;
+}
+
 
 @media screen and (max-width: 2000px), screen and (max-height: 1225px) {
     .table {
@@ -178,11 +174,14 @@ button {
     .col-xl-4, .col-xl-8 {
         height: 847px;
     }
-    h1 {
+    .extra {
+        padding-top: 75px;
+    }
+    #keyboardName {
         font-size: 2.5rem;
     }
     .thumb-bar {
-        top: -70px;
+        top: -145px;
     }
     .thumb-bar img {
         height: 62px;
@@ -197,11 +196,15 @@ button {
     .col-xl-4, .col-xl-8 {
         height: 783px;
     }
-    h1 {
+    #keyboardName {
         font-size: 2.25rem;
+        
+    }
+    .extra {
+        padding-top: 67px;
     }
     .thumb-bar {
-        top: -64.25px;
+        top: -131.25px;
     }
     .thumb-bar img {
         height: 56.25px;
@@ -216,22 +219,24 @@ button {
     .col-xl-4, .col-xl-8 {
         height: 717px;
     }
-    h1 {
+    #keyboardName {
         font-size: 2rem;
     }
+    .extra {
+        padding-top: 60px;
+    }
     .thumb-bar {
-        top: -58px;
+        top: -118px;
     }
     .thumb-bar img {
         height: 50px;
         width: 50px;
     }
-    .nav-link {
-        font-size: 0.6rem;
-    }
 }
 
-@media screen and (max-width: 1600px), screen and (max-height: 960px) {
+
+
+/*@media screen and (max-width: 1600px), screen and (max-height: 960px) {
     .table {
         font-size: 0.6rem;
     }
@@ -252,7 +257,7 @@ button {
         padding-top: 0px;
         height: 50px;
     }
-}
+}*/
 
 
 /*@media screen and (max-width: 1600px), screen and (max-height: 800px) {
@@ -278,14 +283,27 @@ button {
 
 }*/
 
-@media screen and (max-width: 1199px) {
+@media (max-width: 1600px) or (max-height: 955px){
+
+    #keyboardInfo {
+        border-top: 2px solid var(--color-text)!important;
+    }
+
+    .col-xl-4, .col-xl-8 {
+        flex:none;
+        max-width:none;
+    }
     .row {
         padding-left: 20px;
     }
 
+    #keyboardName {
+        padding-left: 40px;
+    }
     .col-xl-4, .col-xl-8 {
         height: 100%;
-        padding-right: 20px;
+        padding-left: 40px;
+        padding-right: 60px;
     }
     .table {
         font-size: 0.75rem;
@@ -308,47 +326,121 @@ button {
         background-color: transparent;
     }
     .displayed-img-mobile {
-        padding: 20px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding: 50px;
+        max-height: 750px;
+        width: 100%;
     }
     .thumb-bar img {
         height: 40px;
         width: 40px;
     }
     .thumb-bar {
-        top: -735px;
-        right: 0px;
+        top: -795px;
+        right: 25px;
         padding-right: 37px;
     }
     #madein {
-        height:70px;
-        bottom: 0px;
+        height:50px;
+        bottom: -86px!important;
         right: 5px;
     }
     .bottom-line {
-        bottom: -10px;
+        bottom: -30px;
     }
-    .navbar-toggler {
-        position: absolute;
-        top: 15px;
-        right: 75px;
-    }
-    .btn-container {
-        right: 30px;
-      }
     .navbar {
         position: relative!important;
     }
-    .navbar-nav {
-        margin-right: 0px!important;
-    }
+
 
 }
 
-@media screen and (max-width: 750px) {
-    .thumb-bar img {
-        height: 15px;
-        width: 15px;
+@media screen and (max-width: 970px) {
+    .nav-link {
+        font-size: 0.6rem;
     }
+}
+@media screen and (max-width: 805px) {
+    .nav-link {
+        padding: 4px!important;
+    }   
+    #keyboardName {
+        font-size: 1.5rem;
+    }
+    .extra {
+        padding-top: 46px;
+        height: 0px;
+    }
+    .thumb-bar {
+        top: -781px;
+    }
+}
+
+
+
+@media screen and (max-width: 785px) {
+    .displayed-img-mobile{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .thumb-bar {
+        top: -766px;
+    }
+    .thumb-bar img {
+        height: 25px;
+        width: 25px;
+        padding: 1px;
+    }
+    .displayed-img-mobile {
+        padding-bottom: 35px;
+    }
+
+
+}
+@media screen and (max-width: 650px) {
+    /*.showon5, .thumb-bar {
+        display: none;
+    }*/
+    .displayed-img-mobile{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+    }
+    .thumb-bar img {
+        height: 20px;
+        width: 20px;
+        margin: 1px;
+    }
+    .thumb-bar {
+        top: -759px;
+        right: 0px;
+        padding-right: 4px;
+    }
+    .col-xl-4, .col-xl-8 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #keyboardName {
+        padding-left: 0px;
+    }
+    .container-fluid {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .row {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+
+}
+@media screen and (max-width: 460px) {
+    #keyboardName {
+        font-size: 1.25rem;
+    }
+    .extra {
+        padding-top: 45px;
+        height: 0px;
+    }
+    
+
 }
