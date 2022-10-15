@@ -15,7 +15,10 @@ table {
 }
 /* moves sidenav down */
 .sidenav {
-    padding-top: 34px;
+    padding-top: 7px;
+}
+p {
+    margin-bottom: 5px;
 }
 
 
@@ -48,9 +51,17 @@ thead tr.stickynest th {
     border-style: solid;
     border-color: var(--color-text);
 }
+
+.form-control {
+    background-color: var(--color-table-light)!important;
+    color: var(--color-text)!important;
+}
+
 /* changes text colour of unclicked dropdown */
 .bootstrap-select>.dropdown-toggle.bs-placeholder {
     color: var(--color-text)!important;
+    background-color: var(--color-table-light)!important;
+    border: 0px!important;
 }
 /* changes text colour on hover */
 .bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
@@ -58,8 +69,9 @@ thead tr.stickynest th {
   }
 /* changes dropdown bg colour */
 .btn-light {
-    background-color: var(--color-table-light)!important;
-    border: 0px!important;
+    background-color: var(--color-table-dark)!important;
+    border: 1px solid var(--color-accent);
+    color: var(--color-text)!important;
 }
 /* on hover */
 .btn-light:hover {
@@ -174,14 +186,16 @@ thead tr.stickynest th {
         display: none;
     }
 }
-@media (max-width: 1595px) or (max-height: 895px){
+
+
+@media (min-width: 1595px) and (min-height: 882px){
     .hideon2 {
-        display:none;
+        display: block !important;
     }
 }
 @media screen and (max-width: 975px){
     .hideon3 {
-        display:none;
+        display: none;
     }
 }
 @media screen and (max-width: 960px){

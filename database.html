@@ -24,7 +24,7 @@
 
 
     <!-- Favicons -->
-<link rel="icon" href="favicon.png">
+<link rel="icon" href="assets/favicon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +41,7 @@
 
 <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
   <div class="top-line"></div>
-  <a class="navbar-brand" href="index.html"><img src="transparent.png" alt="" width="120" height="40" id="site-logo" class="site-logo"></a>
+  <a class="navbar-brand" href="index.html"><img src="assets/transparent.png" alt="" width="120" height="40" id="site-logo" class="site-logo"></a>
     <button class="navbar-toggler" id="toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation" onclick="setTimeout(togglerEvent, 25)">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -65,10 +65,10 @@
       </li>
     </ul>
     <a href="https://github.com/photekq/Cherry-Archive" title="github" style="padding-right: 10px; padding-bottom: 2px;">
-      <img src="github.png" style="width:40px; height: 40px;">
+      <img src="assets/github.png" style="width:40px; height: 40px;">
     </a>
     <a href="https://discord.gg/EM2CFtXep3" title="Discord" style="padding-right: 183px; padding-top: 5px;">
-      <img src="discord.png" style="height:47px;">
+      <img src="assets/discord.png" style="height:47px;">
     </a>
   </div>
 </nav>
@@ -88,67 +88,67 @@
         </tr>
         <tr class="stickynest" id="table-head">
           <th>
-            <select class="selectpicker" multiple id="Series" title="Series" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+            <select class="selectpicker" multiple id="kbSeries" title="Series" data-width="100%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
             </select>
           </th>
           <th>
-            <select class="selectpicker" multiple id="Model" title="Model" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+            <select class="selectpicker" multiple id="kbModel" title="Model" data-width="100%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
             </select>
           </th>
           <th>
-            <select class="selectpicker" multiple id="Article" title="Article" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+            <select class="selectpicker" multiple id="kbExtension" title="Extension" data-width="100%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
             </select>
           </th>
           <th class="hideon4">
-            <select class="selectpicker hideon4" multiple id="kbSwitch" title="Switch" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+            <select class="selectpicker hideon4" multiple id="kbSwitch" title="Switch" data-width="100%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
             </select>
           </th>
           <th class="hideon4">
-            <select class="selectpicker hideon4" multiple id="kbInterface" title="Interface" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+            <select class="selectpicker hideon4" multiple id="kbInterface" title="Interface" data-width="100%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
             </select>
           </th>
           <th class="hideon4">
-            <select class="selectpicker hideon4" multiple id="kbBrand" title="Brand" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+            <select class="selectpicker hideon4" multiple id="kbBrand" title="Brand" data-width="100%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
             </select>
           </th>
           <th class="hideon4">
-            <select class="selectpicker hideon4" multiple id="caseStyle" title="Case Style" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+            <select class="selectpicker hideon4" multiple id="caseStyle" title="Case Style" data-width="100%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
             </select>
           </th>
           <th class="hideon3">
-            <select class="selectpicker hideon3" multiple id="languagePrimary" title="Language" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+            <select class="selectpicker hideon3" multiple id="languagePrimary" title="Language" data-width="100%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
             </select>
           </th>
           <th class="hideon3">
-            <select class="selectpicker hideon3" multiple id="layoutSub" title="Secondary Language" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+            <select class="selectpicker hideon3" multiple id="languageSecondary" title="Secondary Language" data-width="100%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
             </select>
           </th>
           <th class="hideon3">
-            <select class="selectpicker hideon3" multiple id="layoutSize" title="Size" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+            <select class="selectpicker hideon3" multiple id="layoutSize" title="Size" data-width="100%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
             </select>
           </th>
           <th class="hideon3">
-            <select class="selectpicker hideon3" multiple id="layoutType" title="Type" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+            <select class="selectpicker hideon3" multiple id="layoutType" title="Type" data-width="100%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
             </select>
           </th>
           <th class="hideon1">
-            <select class="selectpicker hideon1" multiple id="keycapMaterial" title="Material" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+            <select class="selectpicker hideon1" multiple id="keycapMaterial" title="Material" data-width="100%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
             </select>
           </th>
           <th class="hideon1">
-            <select class="selectpicker hideon1" multiple id="keycapThickness" title="Thickness" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+            <select class="selectpicker hideon1" multiple id="keycapThickness" title="Thickness" data-width="100%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
             </select>
           </th>
           <th class="hideon1">
-            <select class="selectpicker hideon1" multiple id="keycapPrimary" title="Legend Print" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+            <select class="selectpicker hideon1" multiple id="keycapPrimary" title="Legend Print" data-width="100%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
             </select>
           </th>
           <th class="hideon1">
-            <select class="selectpicker hideon1" multiple id="keycapSub" title="Sub Legend Print" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+            <select class="selectpicker hideon1" multiple id="keycapSub" title="Sub Legend Print" data-width="100%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
             </select>
           </th>
           <th class="hideon1">
-            <select class="selectpicker hideon1" multiple id="keycapScheme" title="Colour Scheme" data-width="100%" data-selected-text-format="static" data-actions-box="true">
+            <select class="selectpicker hideon1" multiple id="keycapScheme" title="Colour Scheme" data-width="100%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
             </select>
           </th>
         </tr>
@@ -157,42 +157,46 @@
       </tbody>
     </table>
   </div>
-    <div class="sidenav col-2 text-center hideon2" id="side-filters">
+    <div class="sidenav col-2 text-center hideon2" id="side-filters" style="display: none;">
       <p>Keyboard Specifications</p>
-        <select class="selectpicker additional" multiple id="kbKRO" title="Key Rollover" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+        <select class="selectpicker additional" multiple id="kbKRO" title="Key Rollover" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
         </select>
-        <select class="selectpicker additional" multiple id="kbFeature" title="Keyboard Feature" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+        <select class="selectpicker additional" multiple id="kbFeature" title="Keyboard Feature" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
         </select>
-        <select class="selectpicker additional" multiple id="kbFeature2" title="Keyboard Feature2" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+        <select class="selectpicker additional" multiple id="switchPlate" title="Switchplate" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
         </select>
-        <select class="selectpicker additional" multiple id="switchPlate" title="Switchplate" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+        <select class="selectpicker additional" multiple id="switchSuper" title="MX Superblack" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
         </select>
-        <select class="selectpicker additional" multiple id="switchSuper" title="MX Superblack" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+        <select class="selectpicker additional" multiple id="switchLock" title="MX Lock" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
         </select>
-        <select class="selectpicker additional" multiple id="switchLock" title="MX Lock" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
-        </select>
-        <select class="selectpicker additional" multiple id="caseColour" title="Case Colour" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+        <select class="selectpicker additional" multiple id="caseColour" title="Case Colour" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
         </select>
       <p></p>
       <p></p>
       <p>Keycaps</p>
-        <select class="selectpicker additional" multiple id="keycapNonstandard" title="Non-Standard Keycaps" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+        <select class="selectpicker additional" multiple id="keycapNonstandard" title="Non-Standard Keycaps" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
         </select>
-        <select class="selectpicker additional" multiple id="keycapSide" title="Side Legend Print" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+        <select class="selectpicker additional" multiple id="keycapSide" title="Side Legend Print" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
         </select>
-        <select class="selectpicker additional" multiple id="keycapSecColour" title="Secondary Legend Colour" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+        <select class="selectpicker additional" multiple id="keycapSecColour" title="Secondary Legend Colour" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
         </select>
-        <select class="selectpicker additional" multiple id="keycapColour" title="Coloured Keycaps" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+        <select class="selectpicker additional" multiple id="keycapSideColour" title="Side Legend Colour" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
         </select>
-        <select class="selectpicker additional" multiple id="keycapWindow" title="LED Windows" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+        <select class="selectpicker additional" multiple id="keycapColour" title="Coloured Keycaps" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
         </select>
-        <select class="selectpicker additional" multiple id="keycapCaps" title="Caps Lock Type" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+        <select class="selectpicker additional" multiple id="keycapWindow" title="LED Windows" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
         </select>
-        <select class="selectpicker additional" multiple id="keycapMX" title="MX Compatibility" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+        <select class="selectpicker additional" multiple id="keycapCaps" title="Caps Lock Type" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
         </select>
-        <select class="selectpicker additional" multiple id="keycapSpace" title="Spacebar Size" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+        <select class="selectpicker additional" multiple id="keycapMX" title="MX Compatibility" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
         </select>
-        <select class="selectpicker additional" multiple id="layoutWin" title="Windows Keys" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-actions-box="true">
+        <select class="selectpicker additional" multiple id="keycapReleg" title="Relegendable Keycaps" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
+        </select>
+        <select class="selectpicker additional" multiple id="keycapBottomTop" title="Bottom Row Profile" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
+        </select>
+        <select class="selectpicker additional" multiple id="keycapSpace" title="Spacebar Size" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
+        </select>
+        <select class="selectpicker additional" multiple id="layoutWin" title="Windows Keys" data-width="75%" data-selected-text-format="static" data-actions-box="true" data-live-search="true">
         </select>
         <p></p>
         <p></p>
@@ -204,7 +208,7 @@
     </div>
 </div>
 </div>
-<div id="madein"><img src="welsh_flag.svg" style="height: 32px;"><p id="nomargin">designed by photekq</p></div>
+<div id="madein"><img src="assets/welsh_flag.svg" style="height: 32px;"><p id="nomargin">designed by photekq</p></div>
 
 
 <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support us on Ko-fi', '#7289da', 'I3I4DZCWZ');kofiwidget2.draw();</script> 
@@ -291,7 +295,7 @@ x.addListener(screenSize) // Attach listener function on state changes
         $(document).ready(function(){
         $.ajax({
           method: 'GET',
-          url:'/database2.json',
+          url:'assets/database.json',
           success:function(response){
             masterTable = response
             randomMax = response.length
@@ -322,15 +326,15 @@ var state = {
 
 
 var filters = [
-  "Series",
-  "Model",
-  "Article",
+  "kbSeries",
+  "kbModel",
+  "kbExtension",
   "kbSwitch",
   "kbInterface",
   "kbBrand",
   "caseStyle",
   "languagePrimary",
-  "layoutSub",
+  "languageSecondary",
   "layoutSize",
   "layoutType",
   "keycapMaterial",
@@ -340,7 +344,6 @@ var filters = [
   "keycapScheme",
   "kbKRO",
   "kbFeature",
-  "kbFeature2",
   "switchPlate",
   "switchSuper",
   "switchLock",
@@ -348,59 +351,64 @@ var filters = [
   "keycapNonstandard",
   "keycapSide",
   "keycapSecColour",
+  "keycapSideColour",
   "keycapColour",
   "keycapWindow",
   "keycapCaps",
   "keycapMX",
+  "keycapReleg",
+  "keycapBottomTop",
   "keycapSpace",
   "layoutWin"
 ]
 
 var filtersMain = {
-  "Series": "Series",
-  "Model": "Model",
-  "Article": "Article",
+  "kbSeries": "Series",
+  "kbModel": "kbModel",
+  "kbExtension": "kbExtension",
   "kbSwitch": "Switch",
   "kbInterface": "Interface",
   "kbBrand": "Brand",
   "caseStyle": "Case Style",
   "languagePrimary": "Language",
-  "layoutSub": "Sub Language",
-  "layoutSize": "Size",
-  "layoutType": "Type",
-  "keycapMaterial": "Material",
-  "keycapThickness": "Thickness",
+  "languageSecondary": "Secondary Language",
+  "layoutSize": "Layout Size",
+  "layoutType": "Layout Type",
+  "keycapMaterial": "Keycap Material",
+  "keycapThickness": "Keycap Thickness",
   "keycapPrimary": "Legend Print",
   "keycapSub": "Sub Legend Print",
   "keycapScheme": "Colour Scheme",
   "kbKRO": "Key Rollover",
   "kbFeature": "Keyboard Feature",
-  "kbFeature2": "Keyboard Feature2",
   "switchPlate": "Switchplate",
   "switchSuper": "MX Superblack",
   "switchLock": "MX Lock",
-  "caseColour": "Case Colour",
-  "keycapNonstandard": "Non-Stndard Keycaps",
+  "caseColour": "Casing Colour",
+  "keycapNonstandard": "Non-Standard Keycaps",
   "keycapSide": "Side Legend Print",
   "keycapSecColour": "Secondary Legend Colour",
+  "keycapSideColour": "Side Legend Colour",
   "keycapColour": "Coloured Keycaps",
   "keycapWindow": "LED Windows",
   "keycapCaps": "Caps Lock Type",
   "keycapMX": "MX Compatibility",
+  "keycapReleg": "Relegendable Keycaps",
+  "keycapBottomTop": "Bottom/Top Row Profile",
   "keycapSpace": "Spacebar Size",
   "layoutWin": "Windows Keys"
 }
 
 var filtersActive = {
-  "Series": [""],
-  "Model": [""],
-  "Article": [""],
+  "kbSeries": [""],
+  "kbModel": [""],
+  "kbExtension": [""],
   "kbSwitch": [""],
   "kbInterface": [""],
   "kbBrand": [""],
   "caseStyle": [""],
   "languagePrimary": [""],
-  "layoutSub": [""],
+  "languageSecondary": [""],
   "layoutSize": [""],
   "layoutType": [""],
   "keycapMaterial": [""],
@@ -410,7 +418,6 @@ var filtersActive = {
   "keycapScheme": [""],
   "kbKRO": [""],
   "kbFeature": [""],
-  "kbFeature2": [""],
   "switchPlate": [""],
   "switchSuper": [""],
   "switchLock": [""],
@@ -418,10 +425,13 @@ var filtersActive = {
   "keycapNonstandard": [""],
   "keycapSide": [""],
   "keycapSecColour": [""],
+  "keycapSideColour": [""],
   "keycapColour": [""],
   "keycapWindow": [""],
   "keycapCaps": [""],
   "keycapMX": [""],
+  "keycapReleg": [""],
+  "keycapBottomTop": [""],
   "keycapSpace": [""],
   "layoutWin": [""]
 }
@@ -430,13 +440,25 @@ var filtersActive = {
 function buildFilters(){
   for (const index in filtersMain){
     var filter = document.getElementById(`${index}`)
-    const uniqueItems = [...new Map(masterTable.map(item => [item[`${index}`]]))]
-    for (var i = 0; i < uniqueItems.length; i++){
-      if(uniqueItems[i][0] != ""){
-      filter.innerHTML += `<option>${uniqueItems[i][0]}</option>`
+    const uniqueItemsPre = [...new Map(masterTable.map(item => [item[`${index}`]]))]
+    const uniqueItems = new Set()
+    
+    
+    for (var i = 0; i < uniqueItemsPre.length; i++){
+      if (Array.isArray(uniqueItemsPre[i][0])){
+        for (var j = 0; j < uniqueItemsPre[i][0].length; j++){
+          uniqueItems.add(uniqueItemsPre[i][0][j])
+        }
+      } else if (uniqueItemsPre[i][0] != ""){
+      //filter.innerHTML += `<option>${uniqueItems[i][0]}</option>`
+          uniqueItems.add(uniqueItemsPre[i][0])
       }
+      
     }
+    const sortedUniqueItems = Array.from(uniqueItems).sort()
+    sortedUniqueItems.forEach(item => filter.innerHTML += `<option>${item}</option>`)
   }
+
   $('.selectpicker').selectpicker('refresh');
 }
 
@@ -465,15 +487,15 @@ function buildTable(){
 
   for (var i in keyboards){
     var row = `<tr>
-                <td><a href="keyboard.html#${keyboards[i].Index}" target="_blank" style="display:inline-block; width:100%; height:100%;">${keyboards[i].Series}</a></td>
-                <td><a href="keyboard.html#${keyboards[i].Index}" target="_blank" style="display:inline-block; width:100%; height:100%;">${keyboards[i].Model}</a></td>
-                <td><a href="keyboard.html#${keyboards[i].Index}" target="_blank" style="display:inline-block; width:100%; height:100%;">${keyboards[i].Article}</a></td>
+                <td><a href="keyboard.html#${keyboards[i].Index}" target="_blank" style="display:inline-block; width:100%; height:100%;">${keyboards[i].kbSeries}</a></td>
+                <td><a href="keyboard.html#${keyboards[i].Index}" target="_blank" style="display:inline-block; width:100%; height:100%;">${keyboards[i].kbModel}</a></td>
+                <td><a href="keyboard.html#${keyboards[i].Index}" target="_blank" style="display:inline-block; width:100%; height:100%;">${keyboards[i].kbExtension}</a></td>
                 <td class="hideon4">${keyboards[i].kbSwitch}</td>
                 <td class="hideon4">${keyboards[i].kbInterface}</td>
                 <td class="hideon4">${keyboards[i].kbBrand}</td>
                 <td class="hideon4">${keyboards[i].caseStyle}</td>
                 <td class="hideon3">${keyboards[i].languagePrimary}</td>
-                <td class="hideon3">${keyboards[i].layoutSub}</td>
+                <td class="hideon3">${keyboards[i].languageSecondary}</td>
                 <td class="hideon3">${keyboards[i].layoutSize}</td>
                 <td class="hideon3">${keyboards[i].layoutType}</td>
                 <td class="hideon1">${keyboards[i].keycapMaterial}</td>
@@ -558,25 +580,42 @@ function pageButtons(pages){
 }
 
 
-/*$('#Series').on('change', function(){
-  state.page = 1
-  var value = $(this).val()
-  if (value.length > 0){
-  console.log(value)
-  searchTable(value, masterTable)} else{
-    value[0] = ""
-    searchTable(value, masterTable)
-  }
-})*/
+
+function findCommonElement(array1, array2) {
+     
+     // Loop for array1
+     for(let i = 0; i < array1.length; i++) {
+          
+         // Loop for array2
+         for(let j = 0; j < array2.length; j++) {
+              
+             // Compare the element of each and
+             // every element from both of the
+             // arrays
+             if(array1[i] === array2[j]) {
+              
+                 // Return if common element found
+                 return true;
+             }
+         }
+     }
+      
+     // Return if no common element exist
+     return false;
+ }
 
 function searchTable(data){
   var filteredData = []
   //
   for (var i = 0; i < data.length; i++){
-    var balls = filters.every(function(filter){
+    var match = filters.every(function(filter){
       if (filtersActive[filter][0] == ""){
         return filter
-      } else{
+      } else if (Array.isArray(data[i][filter])) {
+        if (findCommonElement(data[i][filter], filtersActive[filter])) {
+          return filter
+        }
+      } else {
           if (filtersActive[filter].includes(data[i][filter])){
             return filter
           }
@@ -584,8 +623,7 @@ function searchTable(data){
 
 
     })
-    console.log(balls)
-    if (balls){
+    if (match){
       filteredData.push(data[i])
     }
     }
@@ -612,13 +650,10 @@ $('.selectpicker').on('change', function(){
   state.page = 1
   var value = $(this).val()
   var filter = $(this).attr('id')
-  console.log(value.length)
   if (value.length > 0){
   filtersActive[filter] = value
-  console.log(filtersActive)
   searchTable(masterTable)} else{
     filtersActive[filter] = [""]
-    console.log(filtersActive)
     searchTable(masterTable)
   }
 })

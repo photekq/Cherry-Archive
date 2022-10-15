@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.80.0">
-    <title>Cherry Archive - Database</title>
+    <title>Cherry Archive - Submit</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/starter-template/">
 
@@ -24,7 +24,7 @@
 
 
     <!-- Favicons -->
-<link rel="icon" href="favicon.png">
+<link rel="icon" href="assets/favicon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,34 +41,34 @@
 
 <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
   <div class="top-line"></div>
-  <a class="navbar-brand" href="index.html"><img src="transparent.png" alt="" width="120" height="40" id="site-logo" class="site-logo"></a>
+  <a class="navbar-brand" href="index.html"><img src="assets/transparent.png" alt="" width="120" height="40" id="site-logo" class="site-logo"></a>
     <button class="navbar-toggler" id="toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation" onclick="setTimeout(togglerEvent, 25)">
       <span class="navbar-toggler-icon"></span>
     </button>
 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link active" href="index.html">Home</a>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" aria-current="page" href="database.html">Database</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link random" href="random.html" target="_blank" onclick="randomer()">Random KBD</a>
+        <a class="nav-link random" href="random.html"onclick="randomer()">Random KBD</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="submit.html">Submit a KBD</a>
+      <li class="nav-item active">
+        <a class="nav-link active" href="submit.html">Submit a KBD</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="about.html">About</a>
       </li>
     </ul>
     <a href="https://github.com/photekq/Cherry-Archive" title="github" style="padding-right: 10px; padding-bottom: 2px;">
-      <img src="github.png" style="width:40px; height: 40px;">
+      <img src="assets/github.png" style="width:40px; height: 40px;">
     </a>
     <a href="https://discord.gg/EM2CFtXep3" title="Discord" style="padding-right: 183px; padding-top: 5px;">
-      <img src="discord.png" style="height:47px;">
+      <img src="assets/discord.png" style="height:47px;">
     </a>
   </div>
 </nav>
@@ -90,7 +90,7 @@
 </div>
 <div class="decoration">
   <div class="bottom-line"></div>
-  <div id="madein"><img src="welsh_flag.svg" style="height: 32px;"><p id="nomargin">designed by photekq</p></div>
+  <div id="madein"><img src="assets/welsh_flag.svg" style="height: 32px;"><p id="nomargin">designed by photekq</p></div>
 </div>
 
 
@@ -118,6 +118,7 @@ body::after {
   position: relative;
 }
 .welcome {
+  padding: 0 30px 0 30px;
   position: relative;
 }
 #madein .bottom-line {
@@ -194,7 +195,7 @@ var randomMax = 0;
 $(document).ready(function(){
 $.ajax({
   method: 'GET',
-  url:'database2.json',
+  url:'assets/database.json',
   success:function(response){
     randomMax = response.length
     randomEntry = Math.round(Math.random() * randomMax)

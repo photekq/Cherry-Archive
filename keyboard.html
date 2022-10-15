@@ -3,13 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.80.0">
-    <title>Starter Template · Bootstrap v4.6</title>
+    <title>Cherry Archive - View Keyboard</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/starter-template/">
 
 
 
@@ -25,14 +20,14 @@
 
 
     <!-- Favicons -->
-    <link rel="icon" href="favicon.png">
-<link rel="apple-touch-icon" href="/docs/4.6/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/4.6/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/4.6/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/4.6/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/4.6/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-<link rel="icon" href="/docs/4.6/assets/img/favicons/favicon.ico">
-<meta name="msapplication-config" content="/docs/4.6/assets/img/favicons/browserconfig.xml">
+    <link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="/docs/4.6assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.6assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.6assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.6assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.6assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.6assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.6assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#563d7c">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,7 +44,7 @@
     <div class="bottom-line"></div>
     <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
       <div class="top-line"></div>
-      <a class="navbar-brand" href="index.html"><img src="transparent.png" alt="" width="120" height="40" id="site-logo" class="site-logo"></a>
+      <a class="navbar-brand" href="index.html"><img src="assets/transparent.png" alt="" width="120" height="40" id="site-logo" class="site-logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -63,7 +58,7 @@
             <a class="nav-link active" aria-current="page" href="database.html">Database</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="random" href="random.html" target="_blank" onclick="randomer()">Random KBD</a>
+            <a class="nav-link" id="random" href="random.html" onclick="randomer()">Random KBD</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="submit.html">Submit a KBD</a>
@@ -73,10 +68,10 @@
           </li>
         </ul>
         <a href="https://github.com/photekq/Cherry-Archive" title="github" style="padding-right: 10px; padding-bottom: 2px;">
-          <img src="github.png" style="width:40px; height: 40px;">
+          <img src="assets/github.png" style="width:40px; height: 40px;">
         </a>
         <a href="https://discord.gg/EM2CFtXep3" title="Discord" style="padding-right: 183px; padding-top: 5px;">
-          <img src="discord.png" style="height:47px;">
+          <img src="assets/discord.png" style="height:47px;">
         </a>
       </div>
     </nav>
@@ -90,8 +85,10 @@
   <div class="row justify-content-start">
     <div class="col-xl-8 showon5" id="image-container">
       <div class="full-img">
-        <a href="credit.html"><div class="credit">Is this image yours? Click me!</div></a>
+        <a class="credit-link-mobile" href="credit.html"><div class="credit-mobile">Is this image yours? Click me!</div></a>
+        <a class="pdf-wrapper-mobile" target="_blank">
         <img class="displayed-img-mobile" src="">
+        </a>
       </div>
 
     </div>
@@ -104,8 +101,10 @@
   </div>
     <div class="col-xl-8 hideon5" id="image-container">
       <div class="full-img">
-        <a href="credit.html"><div class="credit">Is this image yours? Click me!</div></a>
+        <a class="credit-link" href="credit.html"><div class="credit">Is this image yours? Click me!</div></a>
+        <a class="pdf-wrapper" target="_blank">
         <img class="displayed-img" src="">
+        </a>
       </div>
 
     </div>
@@ -122,7 +121,7 @@
   </div>
 </div>
 </div>
-<div id="madein"><img src="welsh_flag.svg" style="height: 32px;"><p id="nomargin">designed by photekq</p></div>
+<div id="madein"><img src="assets/welsh_flag.svg" style="height: 32px;"><p id="nomargin">designed by photekq</p></div>
 
 
 
@@ -155,15 +154,15 @@ function setTheme(themeName) {
 var keyboardID = window.location.hash.substr(1);
 
 var filtersMain = {
-  "Series": "Series",
-  "Model": "Model",
-  "Article": "Article",
+  "kbSeries": "Series",
+  "kbModel": "Model",
+  "kbExtension": "Extension",
   "kbSwitch": "Switch",
   "kbInterface": "Interface",
   "kbBrand": "Brand",
   "caseStyle": "Case Style",
   "languagePrimary": "Language",
-  "layoutSub": "Sub Language",
+  "languageSecondary": "Secondary Language",
   "layoutSize": "Layout Size",
   "layoutType": "Layout Type",
   "keycapMaterial": "Keycap Material",
@@ -173,33 +172,40 @@ var filtersMain = {
   "keycapScheme": "Colour Scheme",
   "kbKRO": "Key Rollover",
   "kbFeature": "Keyboard Feature",
-  "kbFeature2": "Keyboard Feature2",
   "switchPlate": "Switchplate",
   "switchSuper": "MX Superblack",
   "switchLock": "MX Lock",
+  "caseColour": "Casing Colour",
   "keycapNonstandard": "Non-Standard Keycaps",
   "keycapSide": "Side Legend Print",
+  "keycapSecColour": "Secondary Legend Colour",
+  "keycapSideColour": "Side Legend Colour",
+  "keycapColour": "Coloured Keycaps",
+  "keycapWindow": "LED Windows",
+  "keycapCaps": "Caps Lock Type",
   "keycapMX": "MX Compatibility",
-  "keycapSpace": "Spacebar Size"
+  "keycapReleg": "Relegendable Keycaps",
+  "keycapBottomTop": "Bottom/Top Row Profile",
+  "keycapSpace": "Spacebar Size",
+  "layoutWin": "Windows Keys"
 }
 
 
-
 var masterTable = []
-$(document).ready(function(){
+function ready(){
 $.ajax({
   method: 'GET',
-  url:'database2.json',
+  url:'assets/database.json',
   success:function(response){
     masterTable = response
-    randomMax = response.length
+    randomMax = response.length-1
     randomEntry = Math.round(Math.random() * randomMax)
     document.getElementById("random").href=`keyboard.html#${randomEntry}`
     var keyboardData = masterTable.filter(obj => {
-      return obj.Index === keyboardID
+      return obj.Index == keyboardID
     })
-    keyboardData = keyboardData[0]
 
+    keyboardData = keyboardData[0]
 
 
 
@@ -207,45 +213,113 @@ $.ajax({
 
   //  var fs = require('fs');
   $.ajax({
-      url: '/images/'+keyboardData.Series+'/'+keyboardData.Model+'/'+keyboardData.Article+'/'+keyboardData.Series+'-'+keyboardData.Model+keyboardData.Article+'-ref1-1.jpg',
+      url: 'images/'+keyboardData.kbSeries+'/'+keyboardData.kbModel+'/'+keyboardData.kbExtension+'/'+keyboardData.Index+'/'+keyboardData.kbSeries+'-'+keyboardData.kbModel+keyboardData.kbExtension+'-ref1-1.jpg',
       type:'HEAD',
       error: function()
       {
-          displayedImage.src = `/images/noimage.jpg`
-          displayedImageMobile.src = `/images/noimage.jpg`
+          if (keyboardData["refImagecount1"].split(",")[0] == "PDF") {
+            displayedImage.src = `images/pdf.jpg`
+            displayedImageMobile.src = `images/pdf.jpg`
+
+            pdfWrapper.href = `PDFs/${keyboardData["refImagecount1"].split(",")[1]}.pdf`
+            pdfWrapperMobile.href = `PDFs/${keyboardData["refImagecount1"].split(",")[1]}.pdf`
+          } else {
+          displayedImage.src = `images/noimage.jpg`
+          displayedImageMobile.src = `images/noimage.jpg`
+          }
       },
       success: function()
       {
-          displayedImage.src = `/images/${keyboardData.Series}/${keyboardData.Model}/${keyboardData.Article}/${keyboardData.Series}-${keyboardData.Model}${keyboardData.Article}-ref1-1.jpg`
-          displayedImageMobile.src = `/images/${keyboardData.Series}/${keyboardData.Model}/${keyboardData.Article}/${keyboardData.Series}-${keyboardData.Model}${keyboardData.Article}-ref1-1.jpg`
+          displayedImage.src = `images/${keyboardData.kbSeries}/${keyboardData.kbModel}/${keyboardData.kbExtension}/${keyboardData.Index}/${keyboardData.kbSeries}-${keyboardData.kbModel}${keyboardData.kbExtension}-ref1-1.jpg`
+          displayedImageMobile.src = `images/${keyboardData.kbSeries}/${keyboardData.kbModel}/${keyboardData.kbExtension}/${keyboardData.Index}/${keyboardData.kbSeries}-${keyboardData.kbModel}${keyboardData.kbExtension}-ref1-1.jpg`
+          if (keyboardData["refAuthor1"] !== "") {
+            creditName.innerHTML = `Photo by ${keyboardData["refAuthor1"]}`
+            creditNameMobile.innerHTML = `Photo by ${keyboardData["refAuthor1"]}`
+          }
+          if (keyboardData["refSite1"] !== "") {
+            creditLink.setAttribute('href', keyboardData["refSite1"])
+            creditLinkMobile.setAttribute('href', keyboardData["refSite1"])
+          }
       }
   });
 
-for(let i =1; i <= keyboardData.refQuantity; i++){
+for(let i = 1; i <= keyboardData.refQuantity; i++){
   var counter = eval(`keyboardData.refImagecount${i}`)
-  console.log(counter)
-  for(let j = 1; j <= counter; j++) {
-    const newImage = document.createElement('img');
-    newImage.setAttribute('src', `/images/${keyboardData.Series}/${keyboardData.Model}/${keyboardData.Article}/${keyboardData.Series}-${keyboardData.Model}${keyboardData.Article}-ref${i}-${j}.jpg`);
-    thumbBar.appendChild(newImage);
-    newImage.onclick = function(e) {
-      displayedImage.src = e.target.src;
-      displayedImageMobile.src = e.target.src;
+  if (counter.split(",")[0] == "PDF") {
+    pdfLink = `PDFs/${counter.split(",")[1]}.pdf`
+    const pdfImage = document.createElement('img');
+    pdfImage.setAttribute('src', `images/pdf.jpg`);
+    pdfImage.setAttribute('href', pdfLink);
+    thumbBar.appendChild(pdfImage);
+    pdfImage.onclick = function(d) {
+      fullImage = d.target.src;
+      pdfWrapper.setAttribute('href', pdfLink);
+      pdfWrapperMobile.setAttribute('href', pdfLink);
+      displayedImage.src = fullImage;
+      displayedImageMobile.src = fullImage;
+      creditName.innerHTML = "Is this image yours? Click me!"
+      creditNameMobile.innerHTML = "Is this image yours? Click me!"
+      creditLink.setAttribute('href', "credit.html")
+      creditLinkMobile.setAttribute('href', "credit.html")
+    }
+  } else {
+    for(let j = 1; j <= counter; j++) {
+      const newImage = document.createElement('img');
+      newImage.setAttribute('src', `images/${keyboardData.kbSeries}/${keyboardData.kbModel}/${keyboardData.kbExtension}/${keyboardData.Index}/${keyboardData.kbSeries}-${keyboardData.kbModel}${keyboardData.kbExtension}-ref${i}-${j}.thumbnail`);
+      thumbBar.appendChild(newImage);
+      newImage.onclick = function(e) {
+        fullImage = e.target.src.substr(0, e.target.src.lastIndexOf(".") + 1) + "jpg";
+        displayedImage.src = fullImage;
+        displayedImageMobile.src = fullImage;
+        pdfWrapper.removeAttribute("href")
+        pdfWrapperMobile.removeAttribute("href")
+        if (displayedImage.src.includes("ref1") && keyboardData["refAuthor1"] !== ""){
+          creditName.innerHTML = `Photo by ${keyboardData["refAuthor1"]}`
+          creditNameMobile.innerHTML = `Photo by ${keyboardData["refAuthor1"]}`
+          if (keyboardData["refSite1"] !== ""){
+            creditLink.setAttribute('href', keyboardData["refSite1"])
+            creditLinkMobile.setAttribute('href', keyboardData["refSite1"])
+          }
+        } else if (displayedImage.src.includes("ref2") && keyboardData["refAuthor2"] !== ""){
+          creditName.innerHTML = `Photo by ${keyboardData["refAuthor2"]}`
+          creditNameMobile.innerHTML = `Photo by ${keyboardData["refAuthor2"]}`
+          if (keyboardData["refSite2"] !== ""){
+            creditLink.setAttribute('href', keyboardData["refSite2"])
+            creditLinkMobile.setAttribute('href', keyboardData["refSite2"])
+          }
+        } else {
+          creditName.innerHTML = "Is this image yours? Click me!"
+          creditNameMobile.innerHTML = "Is this image yours? Click me!"
+          creditLink.setAttribute('href', "credit.html")
+          creditLinkMobile.setAttribute('href', "credit.html")
+        }
+        }
+      }
     }
   }
-}
 
 
-  keyboardName.innerHTML = `Cherry ${keyboardData.Series}-${keyboardData.Model}${keyboardData.Article}`
+
+  keyboardName.innerHTML = `Cherry ${keyboardData.kbSeries}-${keyboardData.kbModel}${keyboardData.kbExtension}`
 
   var keyboardInfo = document.getElementById("keyboard").querySelector("#keyboardInfo");
 
 var tableData = ''
 for (const index of Object.keys(filtersMain)) {
+  if (Array.isArray(keyboardData[index])) {
+  var arrayedData = ''
+  keyboardData[index].forEach(item => arrayedData += `${item}, `)
+  arrayedData = arrayedData.substr(0, arrayedData.lastIndexOf(","))
+  tableData += `<tr>
+                              <th>${filtersMain[index]}</th>
+                              <td>${arrayedData}</td>
+                            </tr>`
+  } else {
   tableData += `<tr>
                               <th>${filtersMain[index]}</th>
                               <td>${keyboardData[index]}</td>
                             </tr>`
+  }
 }
 tableData += `<tr>
                 <th>Alternate designation</th>
@@ -256,11 +330,22 @@ keyboardInfo.innerHTML = tableData
 }
 })
 
-})
+}
+
+$(document).ready(ready);
 
 function randomer(){
 randomEntry = Math.round(Math.random() * randomMax)
 document.getElementById("random").href=`keyboard.html#${randomEntry}`
+keyboardID = randomEntry
+thumbBar.innerHTML = ''
+creditName.innerHTML = "Is this image yours? Click me!"
+creditNameMobile.innerHTML = "Is this image yours? Click me!"
+creditLink.setAttribute('href', "credit.html")
+creditLinkMobile.setAttribute('href', "credit.html")
+pdfWrapper.removeAttribute('href')
+pdfWrapperMobile.removeAttribute('href')
+ready()
 }
 
 
@@ -270,6 +355,13 @@ document.getElementById("random").href=`keyboard.html#${randomEntry}`
 const displayedImage = document.querySelector('.displayed-img');
 const displayedImageMobile = document.querySelector('.displayed-img-mobile');
 const thumbBar = document.querySelector('.thumb-bar');
+const pdfWrapper = document.querySelector('.pdf-wrapper')
+const pdfWrapperMobile = document.querySelector('.pdf-wrapper-mobile')
+const creditName = document.querySelector('.credit');
+const creditLink = document.querySelector('.credit-link');
+const creditNameMobile = document.querySelector('.credit-mobile');
+const creditLinkMobile = document.querySelector('.credit-link-mobile');
+
 
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
