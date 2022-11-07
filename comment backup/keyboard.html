@@ -86,9 +86,10 @@
     <div class="col-xl-8 showon5" id="image-container">
       <div class="full-img">
         <a class="credit-link-mobile" href="credit.html"><div class="credit-mobile">Is this image yours? Click me!</div></a>
-        <a class="pdf-wrapper-mobile" target="_blank">
+        <div class="pdf-wrapper-mobile">
+
         <img class="displayed-img-mobile" src="">
-        </a>
+        </div>
       </div>
 
     </div>
@@ -102,9 +103,10 @@
     <div class="col-xl-8 hideon5" id="image-container">
       <div class="full-img">
         <a class="credit-link" href="credit.html"><div class="credit">Is this image yours? Click me!</div></a>
-        <a class="pdf-wrapper" target="_blank">
+        <div class="pdf-wrapper">
+
         <img class="displayed-img" src="">
-        </a>
+        </div>
       </div>
 
     </div>
@@ -230,8 +232,12 @@ $.ajax({
       },
       success: function()
       {
-          pdfWrapper.innerHTML = `<img class="displayed-img" src="images/${keyboardData.kbSeries}/${keyboardData.kbModel}/${keyboardData.kbExtension}/${keyboardData.Index}/${keyboardData.kbSeries}-${keyboardData.kbModel}${keyboardData.kbExtension}-ref1-1.jpg">`
-          pdfWrapperMobile.innerHTML = `<img class="displayed-img" src="images/${keyboardData.kbSeries}/${keyboardData.kbModel}/${keyboardData.kbExtension}/${keyboardData.Index}/${keyboardData.kbSeries}-${keyboardData.kbModel}${keyboardData.kbExtension}-ref1-1.jpg">`
+          pdfWrapper.innerHTML = `<img class="displayed-img" src="images/${keyboardData.kbSeries}/${keyboardData.kbModel}/${keyboardData.kbExtension}/${keyboardData.Index}/${keyboardData.kbSeries}-${keyboardData.kbModel}${keyboardData.kbExtension}-ref1-1.jpg"><div class="comment"></div>`
+          pdfWrapperMobile.innerHTML = `<img class="displayed-img-mobile" src="images/${keyboardData.kbSeries}/${keyboardData.kbModel}/${keyboardData.kbExtension}/${keyboardData.Index}/${keyboardData.kbSeries}-${keyboardData.kbModel}${keyboardData.kbExtension}-ref1-1.jpg"><div class="comment-mobile"></div>`
+          if (keyboardData["comment1"] !== "") {
+            document.querySelector('.comment').innerHTML = keyboardData["comment1"]
+            document.querySelector('.comment-mobile').innerHTML = keyboardData["comment1"]
+          }
           if (keyboardData["refAuthor1"] !== "") {
             creditName.innerHTML = `Photo by ${keyboardData["refAuthor1"]}`
             creditNameMobile.innerHTML = `Photo by ${keyboardData["refAuthor1"]}`
@@ -267,29 +273,46 @@ for(let i = 1; i <= keyboardData.refQuantity; i++){
       thumbBar.appendChild(newImage);
       newImage.onclick = function(e) {
         fullImage = e.target.src.substr(0, e.target.src.lastIndexOf(".") + 1) + "jpg";
-        pdfWrapper.innerHTML = `<img class="displayed-img" src=${fullImage}>`
-        pdfWrapperMobile.innerHTML = `<img class="displayed-img-mobile" src=${fullImage}>`
-        if (document.querySelector('.displayed-img').src.includes("ref1") && keyboardData["refAuthor1"] !== ""){
-          console.log(document.querySelector('.displayed-img').src)
-          creditName.innerHTML = `Photo by ${keyboardData["refAuthor1"]}`
-          creditNameMobile.innerHTML = `Photo by ${keyboardData["refAuthor1"]}`
-          if (keyboardData["refSite1"] !== ""){
-            creditLink.setAttribute('href', keyboardData["refSite1"])
-            creditLinkMobile.setAttribute('href', keyboardData["refSite1"])
+        pdfWrapper.innerHTML = `<img class="displayed-img" src=${fullImage}><div class="comment"></div>`
+        pdfWrapperMobile.innerHTML = `<img class="displayed-img-mobile" src=${fullImage}><div class="comment-mobile"></div>`
+        if (document.querySelector('.displayed-img').src.includes("ref1")){
+          if (keyboardData["comment1"] !== ""){
+            document.querySelector('.comment').innerHTML = keyboardData["comment1"]
+            document.querySelector('.comment-mobile').innerHTML = keyboardData["comment1"]
           }
-        } else if (document.querySelector('.displayed-img').src.includes("ref2") && keyboardData["refAuthor2"] !== ""){
-          creditName.innerHTML = `Photo by ${keyboardData["refAuthor2"]}`
-          creditNameMobile.innerHTML = `Photo by ${keyboardData["refAuthor2"]}`
-          if (keyboardData["refSite2"] !== ""){
-            creditLink.setAttribute('href', keyboardData["refSite2"])
-            creditLinkMobile.setAttribute('href', keyboardData["refSite2"])
+          if (keyboardData["refAuthor1"] !== ""){
+            console.log(document.querySelector('.displayed-img').src)
+            creditName.innerHTML = `Photo by ${keyboardData["refAuthor1"]}`
+            creditNameMobile.innerHTML = `Photo by ${keyboardData["refAuthor1"]}`
+            if (keyboardData["refSite1"] !== ""){
+              creditLink.setAttribute('href', keyboardData["refSite1"])
+              creditLinkMobile.setAttribute('href', keyboardData["refSite1"])
+            }
+          } else {
+            creditName.innerHTML = "Is this image yours? Click me!"
+          creditNameMobile.innerHTML = "Is this image yours? Click me!"
+          creditLink.setAttribute('href', "credit.html")
+          creditLinkMobile.setAttribute('href', "credit.html")
           }
-        } else {
+        } else if (document.querySelector('.displayed-img').src.includes("ref2")){
+            if (keyboardData["comment2"] !== ""){
+              document.querySelector('.comment').innerHTML = keyboardData["comment2"]
+              document.querySelector('.comment-mobile').innerHTML = keyboardData["comment2"]
+            }
+            if (keyboardData["refAuthor2"] !== ""){
+              creditName.innerHTML = `Photo by ${keyboardData["refAuthor2"]}`
+              creditNameMobile.innerHTML = `Photo by ${keyboardData["refAuthor2"]}`
+              if (keyboardData["refSite2"] !== ""){
+                creditLink.setAttribute('href', keyboardData["refSite2"])
+                creditLinkMobile.setAttribute('href', keyboardData["refSite2"])
+              }
+            } else {
           creditName.innerHTML = "Is this image yours? Click me!"
           creditNameMobile.innerHTML = "Is this image yours? Click me!"
           creditLink.setAttribute('href', "credit.html")
           creditLinkMobile.setAttribute('href', "credit.html")
         }
+          } 
         }
       }
     }
