@@ -45,9 +45,6 @@ server {
 
 	server_name kbdarchive.org www.kbdarchive.org;
 
-	location = / {
-    	return 301 https://kbdarchive.org/cherry/;
-	}
 	location = /credit.html {
     	return 301 https://kbdarchive.org/cherry/credit.html;
 	}
