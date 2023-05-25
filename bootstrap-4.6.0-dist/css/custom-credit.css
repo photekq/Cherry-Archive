@@ -1,0 +1,80 @@
+body {
+    position: relative;
+    min-height: 100vh;
+  }
+  body::after {
+    content: '';
+    display: block;
+    height: 100px; /* Set same as footer's height */
+  }
+  .navbar {
+    position: relative;
+  }
+  .welcome {
+    padding: 0 30px 0 30px;
+    position: relative;
+  }
+  #madein .bottom-line {
+    position: absolute;
+    bottom: 0;
+  }
+  .welcome hr {
+    margin: 0px;
+  }
+  .welcome h1, h2 {
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+  }
+  .welcome h2 {
+    font-size: 1.5rem;
+    padding: 0px;
+  }
+  .welcome li {
+    font-size: 1rem;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .btn {
+    margin-top: 10px;
+  }
+  h2 a {
+    color: var(--color-text);
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+  }
+  h2 a:hover {
+    background-color: var(--color-table-dark);
+    text-decoration: none;
+    color: var(--color-link)!important;
+  }
+  .tips {
+    padding-top: 30px!important;
+  }
+  
+  @media (max-width: 1350px) {
+    .welcome h1 {
+    font-size: 2rem;
+  }
+  .welcome h2 {
+    font-size: 1.25rem;
+  }
+  .welcome li {
+    font-size: 1rem;
+  }
+  }
+  
+  @media (max-width: 1100px) {
+    .welcome h1 {
+    font-size: 1.5rem;
+  }
+  .welcome h2 {
+    font-size: 1rem;
+  }
+  .welcome li {
+    font-size: 0.75rem;
+  }
+  }

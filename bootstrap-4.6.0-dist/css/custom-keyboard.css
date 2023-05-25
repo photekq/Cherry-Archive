@@ -110,7 +110,7 @@ body {
     margin-left: -1px;
 }
 
-.pdf-wrapper, .pdf-wrapper-mobile {
+.image-wrapper, .image-wrapper-mobile {
     margin: 0 auto;
     padding: 50px;
     padding-top: 61px;
@@ -362,7 +362,7 @@ body {
     .col-xl-8 {
         height: 650px;
     }
-    .displayed-img-mobile, .pdf-wrapper, .pdf-wrapper-mobile {
+    .displayed-img-mobile, .image-wrapper, .image-wrapper-mobile {
         padding: 50px;
         max-height: 750px;
         width: 100%;
@@ -446,7 +446,7 @@ body {
 
 
 @media screen and (max-width: 785px) {
-    .displayed-img-mobile, .pdf-wrapper, .pdf-wrapper-mobile {
+    .displayed-img-mobile, .image-wrapper, .image-wrapper-mobile {
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -466,7 +466,7 @@ body {
     /*.showon5, .thumb-bar {
         display: none;
     }*/
-    .displayed-img-mobile, .pdf-wrapper, .pdf-wrapper-mobile {
+    .displayed-img-mobile, .image-wrapper, .image-wrapper-mobile {
         padding-left: 20px;
         padding-right: 20px;
     }

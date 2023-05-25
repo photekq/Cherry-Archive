@@ -1,0 +1,139 @@
+.origin {
+    vertical-align: bottom;
+    border-bottom: 1px solid var(--color-text);
+  }
+  .mid {
+    border-right: 1px solid var(--color-text);
+    border-left: 1px solid var(--color-text);
+  }
+  table {
+    width: 100%;
+    font-size: 1rem;
+    
+  }
+  th, td {
+    padding: 10px 25px 10px 25px;
+    width: 33%;
+    text-align: center;
+  }
+  th {
+    vertical-align: center!important;
+  }
+  td {
+    vertical-align: top;
+  }
+  ul {
+    overflow: hidden;
+    padding-bottom: 0px;
+  }
+  dl {
+    overflow: hidden;
+    padding-bottom: 0px;
+  }
+  .dedication dt, dd {
+    width: 33%!important;
+    text-align: center;
+  }
+  body {
+    position: relative;
+    min-height: 100vh;
+  }
+  body::after {
+    content: '';
+    display: block;
+    height: 100px; /* Set same as footer's height */
+  }
+  .navbar {
+    position: relative;
+  }
+  .welcome {
+    padding: 0 30px 0 30px;
+    position: relative;
+  }
+  #madein .bottom-line {
+    position: absolute;
+    bottom: 0;
+  }
+  .welcome hr {
+    margin: 0px;
+  }
+  .welcome h1 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+  }
+  .welcome h1, h2 {
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+  }
+  .welcome h2 {
+    font-size: 1rem;
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+  .welcome li {
+    text-align: left;
+    width: 25%;
+    float: left;
+    font-size: 1rem;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .btn {
+    margin-top: 10px;
+  }
+  h2 a {
+    color: var(--color-text);
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+  }
+  h2 a:hover {
+    background-color: var(--color-table-dark);
+    text-decoration: none;
+    color: var(--color-link)!important;
+  }
+  .tips {
+    padding-top: 30px!important;
+  }
+  
+  
+  
+  @media (max-width: 1120px) {
+    .welcome h1 {
+    font-size: 1.25rem;
+  }
+  .welcome h2 {
+    font-size: 0.75rem;
+  }
+  .welcome li {
+    font-size: 0.75rem;
+  }
+  table {
+    font-size: 0.75rem;
+  }
+  }
+  
+  @media (max-width: 820px) {
+    .welcome li {
+      padding: 0 10px 0 5px;
+    }
+  }
+  @media (max-width: 666px) {
+    .welcome li {
+      width: 33%;
+    }
+  }
+  @media (max-width: 500px) {
+    .welcome li {
+      width: 50%;
+    }
+    th, td {
+      padding: 5px 10px 5px 10px;
+    }
+    .welcome {
+      padding: 0 10px 0 10px;
+    }
+  }
