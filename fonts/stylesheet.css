@@ -3,8 +3,8 @@
 
 @font-face {
     font-family: 'souvenir_lt_btlight';
-    src: url('souvenir_light_bt-webfont.woff2') format('woff2'),
-         url('souvenir_light_bt-webfont.woff') format('woff');
+    src: url('../fonts/souvenir_light_bt-webfont.woff2') format('woff2'),
+         url('../fonts/souvenir_light_bt-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -12,8 +12,8 @@
 
 @font-face {
     font-family: 'itc_souvenirbold';
-    src: url('souvenir-bold-webfont.woff2') format('woff2'),
-         url('souvenir-bold-webfont.woff') format('woff');
+    src: url('../fonts/souvenir-bold-webfont.woff2') format('woff2'),
+         url('../fonts/souvenir-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -24,8 +24,8 @@
 
 @font-face {
     font-family: 'itc_souvenirbold_italic';
-    src: url('souvenir-bolditalic-webfont.woff2') format('woff2'),
-         url('souvenir-bolditalic-webfont.woff') format('woff');
+    src: url('../fonts/souvenir-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/souvenir-bolditalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: 'itc_souvenirdemi';
-    src: url('souvenir-demi-webfont.woff2') format('woff2'),
-         url('souvenir-demi-webfont.woff') format('woff');
+    src: url('../fonts/souvenir-demi-webfont.woff2') format('woff2'),
+         url('../fonts/souvenir-demi-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -48,8 +48,8 @@
 
 @font-face {
     font-family: 'itc_souvenirdemi_italic';
-    src: url('souvenir-demiitalic-webfont.woff2') format('woff2'),
-         url('souvenir-demiitalic-webfont.woff') format('woff');
+    src: url('../fonts/souvenir-demiitalic-webfont.woff2') format('woff2'),
+         url('../fonts/souvenir-demiitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -60,8 +60,8 @@
 
 @font-face {
     font-family: 'itc_souvenirmedium';
-    src: url('souvenir-medium-webfont.woff2') format('woff2'),
-         url('souvenir-medium-webfont.woff') format('woff');
+    src: url('../fonts/souvenir-medium-webfont.woff2') format('woff2'),
+         url('../fonts/souvenir-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -72,8 +72,8 @@
 
 @font-face {
     font-family: 'itc_souvenirmedium_italic';
-    src: url('souvenir-mediumitalic-webfont.woff2') format('woff2'),
-         url('souvenir-mediumitalic-webfont.woff') format('woff');
+    src: url('../fonts/souvenir-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/souvenir-mediumitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -84,8 +84,8 @@
 
 @font-face {
     font-family: 'cherry-clarendonregular';
-    src: url('cherry-clarendon-webfont.woff2') format('woff2'),
-         url('cherry-clarendon-webfont.woff') format('woff');
+    src: url('../fonts/cherry-clarendon-webfont.woff2') format('woff2'),
+         url('../fonts/cherry-clarendon-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
